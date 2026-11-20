@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - CarePilot AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>CarePilot<span>AI</span></h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="patient.html">Patient Details</a>
+            <a class="active" href="chatbot.html">AI Assistant</a>
+            <a href="upload.html">Document Upload</a>
+            <a href="analysis.html">Medical Analysis</a>
+            <a href="workflow.html">AI Workflow</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>AI Healthcare Assistant</h1>
+                <p>Ask your questions</p>
+            </div>
+        </header>
+
+        <section class="content-card">
+
+            <div class="chat-header">
+                <h2>🤖 CarePilot AI Assistant</h2>
+                <span class="status">● Demo Mode</span>
+            </div>
+
+            <div class="chat-box" id="chatBox">
+
+                <div class="bot-message">
+                    Hello! Welcome to CarePilot AI.
+                    How can I help you today?
+                </div>
+
+            </div>
+
+            <form id="chatForm" class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userMessage"
+                    placeholder="Ask your healthcare question..."
+                    required
+                >
+
+                <button type="submit" class="btn">
+                    Send
+                </button>
+
+            </form>
+
+            <p class="small-note">
+                Demo responses only. Not medical advice.
+            </p>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

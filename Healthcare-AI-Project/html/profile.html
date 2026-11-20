@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CarePilot AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>CarePilot<span>AI</span></h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="patient.html">Patient Details</a>
+            <a href="chatbot.html">AI Assistant</a>
+            <a href="upload.html">Document Upload</a>
+            <a href="analysis.html">Medical Analysis</a>
+            <a href="workflow.html">AI Workflow</a>
+            <a class="active" href="profile.html">Profile</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>My Profile</h1>
+                <p>Manage your account information</p>
+            </div>
+        </header>
+
+        <section class="content-card profile-section">
+
+            <div class="profile-avatar" id="avatar">
+                👤
+            </div>
+
+            <h2 id="profileName">Demo User</h2>
+            <p>Project Administrator</p>
+
+            <form id="profileForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="fullName"
+                               value="Demo User" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email"
+                               value="demo@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Role</label>
+                        <input type="text" id="role"
+                               value="Project Administrator">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Organization</label>
+                        <input type="text" id="organization"
+                               placeholder="Enter organization">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Profile Picture</label>
+                    <input type="file" id="photoInput" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn">
+                    Save Profile
+                </button>
+
+                <button type="button" class="btn secondary"
+                        id="resetProfile">
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

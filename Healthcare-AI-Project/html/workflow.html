@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workflow - CarePilot AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>CarePilot<span>AI</span></h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="patient.html">Patient Details</a>
+            <a href="chatbot.html">AI Assistant</a>
+            <a href="upload.html">Document Upload</a>
+            <a href="analysis.html">Medical Analysis</a>
+            <a class="active" href="workflow.html">AI Workflow</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Agentic AI Workflow</h1>
+                <p>Understanding the working process</p>
+            </div>
+        </header>
+
+        <section class="content-card">
+
+            <h2>System Architecture Workflow</h2>
+
+            <p>
+                This workflow demonstrates how CarePilot AI
+                processes a healthcare query.
+            </p>
+
+            <div class="workflow-container">
+
+                <div class="workflow-step">
+                    <div class="workflow-icon">👤</div>
+                    <h3>User Query</h3>
+                    <p>User enters a healthcare question.</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="workflow-step">
+                    <div class="workflow-icon">🤖</div>
+                    <h3>AI Agent</h3>
+                    <p>Agent understands and manages the task.</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="workflow-step">
+                    <div class="workflow-icon">🔍</div>
+                    <h3>RAG Retrieval</h3>
+                    <p>Relevant information is retrieved from documents.</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="workflow-step">
+                    <div class="workflow-icon">🧠</div>
+                    <h3>LLM Processing</h3>
+                    <p>Retrieved context is used to prepare a response.</p>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="workflow-step">
+                    <div class="workflow-icon">📋</div>
+                    <h3>Final Response</h3>
+                    <p>Evidence-based information is displayed for review.</p>
+                </div>
+
+            </div>
+
+            <button class="btn" id="runWorkflow">
+                Run Workflow Demo
+            </button>
+
+            <p id="workflowStatus">
+                Workflow is ready.
+            </p>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/workflow.js"></script>
+</body>
+</html>

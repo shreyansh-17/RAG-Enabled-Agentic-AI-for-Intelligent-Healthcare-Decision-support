@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload - CarePilot AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h2>CarePilot<span>AI</span></h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="patient.html">Patient Details</a>
+            <a href="chatbot.html">AI Assistant</a>
+            <a class="active" href="upload.html">Document Upload</a>
+            <a href="analysis.html">Medical Analysis</a>
+            <a href="workflow.html">AI Workflow</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Document Upload</h1>
+                <p>Upload medical reports and documents</p>
+            </div>
+        </header>
+
+        <section class="content-card">
+
+            <h2>Upload Medical Documents</h2>
+
+            <div class="upload-area">
+                <div class="upload-icon">📄</div>
+
+                <h3>Select Your Medical PDF</h3>
+
+                <p>Choose PDF documents from your computer.</p>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept=".pdf,application/pdf"
+                    multiple
+                >
+            </div>
+
+            <h2>Selected Documents</h2>
+
+            <div id="fileList">
+                No files selected.
+            </div>
+
+        </section>
+
+        <section class="content-card">
+            <h2>Document Processing Pipeline</h2>
+
+            <div class="pipeline">
+                <div>1. Upload</div>
+                <div>2. Text Extraction</div>
+                <div>3. Chunking</div>
+                <div>4. Embeddings</div>
+                <div>5. Vector Database</div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/upload.js"></script>
+</body>
+</html>
